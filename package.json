@@ -1,0 +1,35 @@
+{
+  "name": "hotel-reservation",
+  "version": "1.0.0",
+  "description": "A hotel manager has to process N bookings of rooms for the next season. His hotel has K rooms. Bookings contain an arrival date and a departure date. He wants to find out whether there are enough rooms in the hotel to satisfy the demand.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "link-module-alias",
+    "preinstall": "command -v link-module-alias && link-module-alias clean || true",
+    "start": "set NODE_ENV=development && nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xt1991/Rotate-Picture.git"
+  },
+  "author": "Tan Doan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xt1991/Rotate-Picture/issues"
+  },
+  "homepage": "https://github.com/xt1991/Rotate-Picture#readme",
+  "_moduleAliases": {
+    "_services": "./services"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "link-module-alias": "^1.2.0"
+  }
+}
