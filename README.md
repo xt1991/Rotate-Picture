@@ -1,0 +1,2 @@
+# Rotate-Picture
+Assume you are implementing a Photo Gallery app. You are requested to help with a feature to rotate the photo on user request. For simplicity, let’s assume the photo to be 2D square grid n * n (rows * columns) and each pixel can store 8 bits values (ranging between 0 to 255) Rotating once should rotate the pixel elements by 90 degrees clockwise. This rotation operation can be called any number of times.
