@@ -5,6 +5,7 @@ let grid = [
   [8, 128, 32],
   [0, 0, 0]
 ]
+// K times
 const K = 1
 
 for (var i = 0; i < K; i++) {
