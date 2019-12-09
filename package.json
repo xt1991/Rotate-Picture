@@ -4,7 +4,7 @@
   "description": "A hotel manager has to process N bookings of rooms for the next season. His hotel has K rooms. Bookings contain an arrival date and a departure date. He wants to find out whether there are enough rooms in the hotel to satisfy the demand.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "postinstall": "link-module-alias",
     "preinstall": "command -v link-module-alias && link-module-alias clean || true",
     "start": "set NODE_ENV=development && nodemon index.js"
@@ -22,7 +22,10 @@
   "_moduleAliases": {
     "_services": "./services"
   },
-  "dependencies": {},
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2"
+  },
   "devDependencies": {
     "eslint": "^6.6.0",
     "eslint-config-standard": "^14.1.0",

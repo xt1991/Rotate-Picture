@@ -6,9 +6,9 @@ let grid = [
   [0, 0, 0]
 ]
 // K times
-const K = 1
+const times = process.argv.slice(2)[0] ? parseInt(process.argv.slice(2)[0]) : 1
 
-for (var i = 0; i < K; i++) {
+for (var i = 0; i < times; i++) {
   grid = pictureService.rotateMatrix(grid)
   console.log(grid)
 }

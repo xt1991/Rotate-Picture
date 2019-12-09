@@ -12,4 +12,7 @@
  - cd project folder -> run "npm i" -> run "npm run postinstall"
 
  # Run Project
- - cd project folder -> run "npm start"
+ - cd project folder -> run "node index :numberTimes", ex : "node index 2", the picture will be rotate 90 degrees 2 times
+
+ # Test 
+ - cd project folder -> run "npm test"
