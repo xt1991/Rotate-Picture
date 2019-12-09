@@ -16,3 +16,5 @@
 
  # Test 
  - cd project folder -> run "npm test"
+
+ # Time Complexity: O(n²)
