@@ -4,6 +4,29 @@ const it = require('mocha').it
 const expect = require('chai').expect
 
 describe('Rotate Picture', function () {
+  it('#grid = [[0, 16, 255],[8, 128, 32],[0, 0, 0]]; times = 0', function () {
+    let grid = [
+      [0, 16, 255],
+      [8, 128, 32],
+      [0, 0, 0]
+    ]
+    // K times
+    const times = 0
+    const result = [
+      [
+        [0, 16, 255],
+        [8, 128, 32],
+        [0, 0, 0]
+      ]
+    ]
+    for (var i = 0; i < times; i++) {
+      grid = pictureService.rotateMatrix(grid)
+      result.push(JSON.parse(JSON.stringify(grid)))
+    }
+    console.log(result)
+    expect(result[0]).to.eql(grid)
+  })
+
   it('#grid = [[0, 16, 255],[8, 128, 32],[0, 0, 0]]; times = 1', function () {
     let grid = [
       [0, 16, 255],
